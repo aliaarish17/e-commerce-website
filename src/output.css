@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-100: oklch(96.2% 0.059 95.617);
     --spacing: 0.25rem;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
@@ -163,32 +164,11 @@
   }
 }
 @layer utilities {
-  .right-3 {
-    right: calc(var(--spacing) * 3);
-  }
-  .left-4 {
-    left: calc(var(--spacing) * 4);
-  }
   .block {
     display: block;
   }
   .flex {
     display: flex;
-  }
-  .hidden {
-    display: none;
-  }
-  .table {
-    display: table;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
-  .flex-row {
-    flex-direction: row;
   }
   .items-center {
     align-items: center;
@@ -198,13 +178,6 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
-  }
-  .gap-9 {
-    gap: calc(var(--spacing) * 9);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .bg-\[\#E3E6F3\] {
     background-color: #E3E6F3;
@@ -222,30 +195,11 @@
   .text-\[\#1a1a1a\] {
     color: #1a1a1a;
   }
-  .text-\[\#1a1a\] {
-    color: #1a1a;
-  }
-  .text-\[\#1a\] {
-    color: #1a;
-  }
-  .text-\[\#\] {
-    color: #;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .sm\:hidden {
-    @media (width >= 40rem) {
-      display: none;
-    }
-  }
-  .md\:flex {
-    @media (width >= 48rem) {
-      display: flex;
+  .hover\:text-amber-100 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-amber-100);
+      }
     }
   }
   .md\:hidden {
@@ -290,26 +244,14 @@ p {
 body {
   width: 100%;
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
