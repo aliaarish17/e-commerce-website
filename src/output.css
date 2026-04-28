@@ -167,12 +167,6 @@
   }
 }
 @layer utilities {
-  .absolute {
-    position: absolute;
-  }
-  .relative {
-    position: relative;
-  }
   .block {
     display: block;
   }
@@ -182,17 +176,32 @@
   .table {
     display: table;
   }
+  .h-90 {
+    height: calc(var(--spacing) * 90);
+  }
+  .h-\[90vh\] {
+    height: 90vh;
+  }
+  .w-full {
+    width: 100%;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .items-center {
     align-items: center;
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
@@ -204,8 +213,41 @@
   .bg-\[\#E3E6F3\] {
     background-color: #E3E6F3;
   }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(\.\/img\/hero4\.png\)\] {
+    background-image: url(./img/hero4.png);
+  }
+  .bg-\[url\(\.png\)\] {
+    background-image: url(.png);
+  }
+  .bg-\[url\(\/img\/hero4\.png\)\] {
+    background-image: url(/img/hero4.png);
+  }
+  .bg-\[url\(Cimg\\hero4\.png\)\] {
+    background-image: url(Cimg\hero4.png);
+  }
+  .bg-\[url\(hero4\.png\)\] {
+    background-image: url(hero4.png);
+  }
+  .bg-\[url\(img\/hero4\.png\)\] {
+    background-image: url(img/hero4.png);
+  }
+  .bg-\[url\(img\\hero4\.png\)\] {
+    background-image: url(img\hero4.png);
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
   }
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
@@ -264,22 +306,10 @@
       height: calc(var(--spacing) * 0.5);
     }
   }
-  .after\:w-2 {
-    &::after {
-      content: var(--tw-content);
-      width: calc(var(--spacing) * 2);
-    }
-  }
   .after\:w-6 {
     &::after {
       content: var(--tw-content);
       width: calc(var(--spacing) * 6);
-    }
-  }
-  .after\:w-30 {
-    &::after {
-      content: var(--tw-content);
-      width: calc(var(--spacing) * 30);
     }
   }
   .after\:content-\[\'\'\] {
@@ -288,31 +318,10 @@
       content: var(--tw-content);
     }
   }
-  .hover\:text-\[\#088\] {
-    &:hover {
-      @media (hover: hover) {
-        color: #088;
-      }
-    }
-  }
   .hover\:text-\[\#088178\] {
     &:hover {
       @media (hover: hover) {
         color: #088178;
-      }
-    }
-  }
-  .hover\:text-\[\#\] {
-    &:hover {
-      @media (hover: hover) {
-        color: #;
-      }
-    }
-  }
-  .hover\:text-amber-100 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-amber-100);
       }
     }
   }
