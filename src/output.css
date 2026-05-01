@@ -335,6 +335,9 @@ body {
   background-size: cover;
   background-position: top 25% right 0;
 }
+#hero h1 {
+  color: #088178;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
