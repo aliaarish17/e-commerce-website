@@ -209,11 +209,17 @@
   .bg-\[\#E3E6F3\] {
     background-color: #E3E6F3;
   }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
