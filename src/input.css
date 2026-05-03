@@ -68,3 +68,12 @@ body{
 #hero h1{
     color: #088178;
 }
+
+#btn{
+    background-image: url(./img/button.png);
+    background-position: center;
+    background-size: cover;
+    width:250px;
+    height: auto;
+}
+

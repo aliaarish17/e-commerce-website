@@ -178,6 +178,9 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
   }
@@ -206,23 +209,14 @@
   .bg-\[\#E3E6F3\] {
     background-color: #E3E6F3;
   }
-  .bg-\[url\.\(\/img\)\] {
-    background-color: url.(/img);
-  }
-  .bg-\[url\(\.\/im\)\] {
-    background-image: url(./im);
-  }
-  .bg-\[url\(\.\/img\)\] {
-    background-image: url(./img);
-  }
-  .bg-\[url\(\.\/img\/\)\] {
-    background-image: url(./img/);
-  }
-  .bg-\[url\(\/img\)\] {
-    background-image: url(/img);
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
   }
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
@@ -372,6 +366,13 @@ body {
 }
 #hero h1 {
   color: #088178;
+}
+#btn {
+  background-image: url(./img/button.png);
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: auto;
 }
 @property --tw-border-style {
   syntax: "*";
