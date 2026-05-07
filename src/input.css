@@ -79,9 +79,14 @@ body{
 }
 
 h6{
+    display: inline-block;
     padding: 9px 8px 6px 8px;
     background-color: #fddde4;
     color: #088178;
     border-radius: 4px;
     line-height: 1;
+}
+
+.fe-box{
+    cursor: pointer;
 }
