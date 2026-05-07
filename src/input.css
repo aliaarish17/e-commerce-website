@@ -81,10 +81,8 @@ body{
 h6{
     display: inline-block;
     padding: 5px 9px 6px 8px;
-    background-color: #fddde4;
-    color: #088178;
     border-radius: 4px;
-    line-height: 1;
+    line-height: 2;
 }
 
 .fe-box{
