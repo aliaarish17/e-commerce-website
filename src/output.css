@@ -187,9 +187,6 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .h-auto {
     height: auto;
   }
@@ -202,14 +199,8 @@
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -242,14 +233,8 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-\[\#\] {
-    border-color: #;
-  }
   .border-\[\#cce7d0\] {
     border-color: #cce7d0;
-  }
-  .border-\[\#cce\] {
-    border-color: #cce;
   }
   .bg-\[\#E3E6F3\] {
     background-color: #E3E6F3;
@@ -312,9 +297,6 @@
   .text-\[\#088178\] {
     color: #088178;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow-\[20px_20px_34px_rgba\(0\,0\,0\,0\.3\)\] {
     --tw-shadow: 20px 20px 34px var(--tw-shadow-color, rgba(0,0,0,0.3));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -322,10 +304,6 @@
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -354,98 +332,10 @@
       }
     }
   }
-  .hover\:shadow {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .hover\:shadow-\[10px\] {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 10px;
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .hover\:shadow-\[10px_10px\] {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 10px 10px var(--tw-shadow-color, currentcolor);
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .hover\:shadow-\[10px_10px_54px\] {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 10px 10px 54px var(--tw-shadow-color, currentcolor);
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .hover\:shadow-\[10px_10px_54px_\] {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 10px 10px 54px var(--tw-shadow-color, currentcolor);
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .hover\:shadow-\[10px_10px_54px_rgba\(\)\] {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 10px 10px 54px var(--tw-shadow-color, rgba());
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .hover\:shadow-\[10px_10px_54px_rgba\(70\,\)\] {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 10px 10px 54px var(--tw-shadow-color, rgba(70,));
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .hover\:shadow-\[10px_10px_54px_rgba\(70\,62\)\] {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 10px 10px 54px var(--tw-shadow-color, rgba(70,62));
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
   .hover\:shadow-\[10px_10px_54px_rgba\(70\,62\,221\,0\.1\)\] {
     &:hover {
       @media (hover: hover) {
         --tw-shadow: 10px 10px 54px var(--tw-shadow-color, rgba(70,62,221,0.1));
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .hover\:shadow-\[10px_10px_54px_rgba\] {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 10px 10px 54px var(--tw-shadow-color, rgba);
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .hover\:shadow-\[10px_10px_\] {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 10px 10px var(--tw-shadow-color, currentcolor);
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .hover\:shadow-\[10px_\] {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 10px;
         box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
       }
     }
@@ -511,6 +401,13 @@ body {
   width: 250px;
   background-color: transparent;
   height: auto;
+}
+h6 {
+  padding: 9px 8px 6px 8px;
+  background-color: #fddde4;
+  color: #088178;
+  border-radius: 4px;
+  line-height: 1;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -586,11 +483,6 @@ body {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -618,7 +510,6 @@ body {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
     }
