@@ -89,3 +89,15 @@ h6{
     cursor: pointer;
 }
 
+.banner{
+    background-image: url(./img/b2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: fit-content;
+    padding: 20px 20px 20px 20px;
+}
+
+.h22{
+    color: white;
+}
+
