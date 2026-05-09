@@ -5,7 +5,9 @@
 @theme {
     --font-spartan: "League Spartan", sans-serif;
 }
-
+html{
+    overflow-x: hidden;
+}
 h1{
     font-size: 50px;
     line-height: 64px;
@@ -93,7 +95,7 @@ h6{
     background-image: url(./img/b2.jpg);
     background-size: cover;
     background-position: center;
-    height: fit-content;
+    height:40vh;
     padding: 20px 20px 20px 20px;
 }
 
