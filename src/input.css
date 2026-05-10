@@ -103,3 +103,42 @@ h6{
     color: white;
 }
 
+.banner-box{
+    background-image: url(./img/b17.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+#b2{
+    background-image: url(./img/b10.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.h-01{
+    color: white;
+}
+
+#bg2{
+    background-position: center;
+    background-image: url(./img/b7.jpg);
+    background-size: cover;
+}
+
+#bg3 {
+    background-position: center;
+    background-image: url(./img/b4.jpg);
+    background-size: cover;
+}
+
+#bg4 {
+    background-position: center;
+    background-image: url(./img/b16.jpg);
+    background-size: cover;
+}
+
+#h22{
+    color: white;
+}
