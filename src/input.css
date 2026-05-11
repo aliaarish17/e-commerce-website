@@ -142,3 +142,21 @@ h6{
 #h22{
     color: white;
 }
+
+#newsletter{
+    
+    background-image: url(./img/top-view-paper-dove-with-notebook-leaves.jpg);
+    background-position: 25%;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+}
+
+
+#btun{
+    background-color: #088178;
+}
+
+#h02{
+ color: white;
+}
