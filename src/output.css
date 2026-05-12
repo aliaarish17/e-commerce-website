@@ -28,6 +28,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --radius-2xl: 1rem;
@@ -199,42 +201,6 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .left-1 {
-    left: calc(var(--spacing) * 1);
-  }
-  .left-1\.5 {
-    left: calc(var(--spacing) * 1.5);
-  }
-  .left-2 {
-    left: calc(var(--spacing) * 2);
-  }
-  .left-2\.5 {
-    left: calc(var(--spacing) * 2.5);
-  }
-  .left-3 {
-    left: calc(var(--spacing) * 3);
-  }
-  .left-5 {
-    left: calc(var(--spacing) * 5);
-  }
-  .left-6 {
-    left: calc(var(--spacing) * 6);
-  }
-  .left-9 {
-    left: calc(var(--spacing) * 9);
-  }
-  .left-14 {
-    left: calc(var(--spacing) * 14);
-  }
-  .left-\[10px\] {
-    left: 10px;
-  }
-  .left-\[12px\] {
-    left: 12px;
-  }
-  .left-\[px\] {
-    left: px;
-  }
   .z-\[999\] {
     z-index: 999;
   }
@@ -255,6 +221,12 @@
   }
   .mt-3\.5 {
     margin-top: calc(var(--spacing) * 3.5);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
   }
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
@@ -307,6 +279,9 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-11 {
+    height: calc(var(--spacing) * 11);
+  }
   .h-\[29vh\] {
     height: 29vh;
   }
@@ -337,8 +312,8 @@
   .w-\[120px\] {
     width: 120px;
   }
-  .w-\[200p\] {
-    width: 200p;
+  .w-\[150px\] {
+    width: 150px;
   }
   .w-\[200px\] {
     width: 200px;
@@ -403,11 +378,32 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-\[2px\] {
+    gap: 2px;
+  }
+  .gap-x-2 {
+    column-gap: calc(var(--spacing) * 2);
+  }
+  .gap-x-2\.5 {
+    column-gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-x-8 {
+    column-gap: calc(var(--spacing) * 8);
+  }
+  .gap-x-15 {
+    column-gap: calc(var(--spacing) * 15);
+  }
   .gap-y-1 {
     row-gap: calc(var(--spacing) * 1);
   }
   .gap-y-1\.5 {
     row-gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-y-4 {
+    row-gap: calc(var(--spacing) * 4);
+  }
+  .gap-y-5 {
+    row-gap: calc(var(--spacing) * 5);
   }
   .gap-y-8 {
     row-gap: calc(var(--spacing) * 8);
@@ -496,6 +492,9 @@
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-\[20px_20px_20px_20px\] {
     padding: 20px 20px 20px 20px;
   }
@@ -553,9 +552,6 @@
   .pr-1 {
     padding-right: calc(var(--spacing) * 1);
   }
-  .pr-2 {
-    padding-right: calc(var(--spacing) * 2);
-  }
   .pr-3 {
     padding-right: calc(var(--spacing) * 3);
   }
@@ -601,9 +597,6 @@
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
   }
-  .pl-5 {
-    padding-left: calc(var(--spacing) * 5);
-  }
   .pl-10 {
     padding-left: calc(var(--spacing) * 10);
   }
@@ -619,11 +612,18 @@
   .text-start {
     text-align: start;
   }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-\[12px\] {
     font-size: 12px;
   }
   .text-\[14px\] {
     font-size: 14px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
   }
   .text-\[16px\] {
     font-size: 16px;
@@ -633,6 +633,9 @@
   }
   .text-\[25px\] {
     font-size: 25px;
+  }
+  .text-\[30px\] {
+    font-size: 30px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -648,6 +651,9 @@
   .text-\[\#1a1a1a\] {
     color: #1a1a1a;
   }
+  .text-\[\#465b52\] {
+    color: #465b52;
+  }
   .text-\[\#060603\] {
     color: #060603;
   }
@@ -656,6 +662,12 @@
   }
   .text-\[\#fff\] {
     color: #fff;
+  }
+  .text-\[465b52\] {
+    color: 465b52;
+  }
+  .text-\[px\] {
+    color: px;
   }
   .text-amber-300 {
     color: var(--color-amber-300);
@@ -829,12 +841,9 @@ h2 {
   color: #222;
   font-weight: 500;
 }
-h3 {
-  font-size: 46px;
-  color: #222;
-}
 h4 {
   font-size: 20px;
+  color: #465b52;
 }
 h6 {
   font-weight: 700;
@@ -936,6 +945,10 @@ h6 {
 }
 #h02 {
   color: white;
+}
+p {
+  margin: 0;
+  padding: 0;
 }
 @property --tw-border-style {
   syntax: "*";

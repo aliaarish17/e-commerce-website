@@ -22,13 +22,11 @@ h2{
     font-weight: 500;
 }
 
-h3{
-    font-size: 46px;
-    color: #222;
-}
+
 
 h4{
     font-size: 20px;
+    color: #465b52;
 
 }
 
@@ -159,4 +157,10 @@ h6{
 
 #h02{
  color: white;
+}
+
+
+p{
+    margin: 0;
+    padding: 0;
 }
