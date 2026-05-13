@@ -28,6 +28,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
@@ -387,12 +389,6 @@
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
   }
-  .gap-x-15 {
-    column-gap: calc(var(--spacing) * 15);
-  }
-  .gap-x-\[25px\] {
-    column-gap: 25px;
-  }
   .gap-y-1 {
     row-gap: calc(var(--spacing) * 1);
   }
@@ -616,6 +612,10 @@
   .text-start {
     text-align: start;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -669,9 +669,6 @@
   }
   .text-\[465b52\] {
     color: 465b52;
-  }
-  .text-\[px\] {
-    color: px;
   }
   .text-amber-300 {
     color: var(--color-amber-300);
@@ -844,10 +841,6 @@ h2 {
   line-height: 62px;
   color: #222;
   font-weight: 500;
-}
-h4 {
-  font-size: 20px;
-  color: #465b52;
 }
 h6 {
   font-weight: 700;
